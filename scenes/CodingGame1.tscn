@@ -1,0 +1,63 @@
+[gd_scene load_steps=6 format=3 uid="uid://cm8qg2w7q3613"]
+
+[ext_resource type="Script" path="res://scenes/coding_game_1.gd" id="1_n0k36"]
+[ext_resource type="Texture2D" uid="uid://b8d13xu76kvtt" path="res://scenes/DALL·E 2025-01-10 07.57.26 - A pixelated video game-themed background with a monochromatic black and gray palette. The design features dark pixel art elements, including blocky cl.webp" id="2_r7xld"]
+
+[sub_resource type="Theme" id="Theme_qi26j"]
+
+[sub_resource type="Theme" id="Theme_mjnl3"]
+
+[sub_resource type="Theme" id="Theme_f7ibn"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme = SubResource("Theme_qi26j")
+script = ExtResource("1_n0k36")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 42.0
+offset_right = 642.0
+offset_bottom = 107.0
+theme = SubResource("Theme_mjnl3")
+text = "Fix the following code snippet: print('Hello World'"
+
+[node name="TextEdit" type="TextEdit" parent="."]
+layout_mode = 0
+offset_left = 42.0
+offset_top = 132.0
+offset_right = 377.0
+offset_bottom = 209.0
+theme = SubResource("Theme_f7ibn")
+placeholder_text = "enter in the missing snippet"
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 45.0
+offset_top = 219.0
+offset_right = 154.0
+offset_bottom = 250.0
+text = "<Submit> >.<"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ReturnButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 214.0
+offset_top = 217.0
+offset_right = 415.0
+offset_bottom = 248.0
+text = "Return to Main Scene >.<"
+
+[node name="Dall·e2025-01-1007_57_26-APixelatedVideoGame-themedBackgroundWithAMonochromaticBlackAndGrayPalette_TheDesignFeaturesDarkPixelArtElements,IncludingBlockyCl" type="Sprite2D" parent="."]
+show_behind_parent = true
+position = Vector2(1256, 715)
+scale = Vector2(2.78223, 2.25488)
+texture = ExtResource("2_r7xld")

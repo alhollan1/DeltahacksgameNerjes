@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://c1w135alc4sn7"]
+
+[ext_resource type="Texture2D" uid="uid://cvo1w5hn461yx" path="res://scenes/Screenshot 2025-01-12 034331.png" id="1_h2qhm"]
+[ext_resource type="Script" path="res://scenes/info1.gd" id="2_m5kw3"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Screenshot2025-01-12034331" type="Sprite2D" parent="."]
+position = Vector2(299.25, 186.25)
+scale = Vector2(0.347691, 0.400323)
+texture = ExtResource("1_h2qhm")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_m5kw3")
+
+[node name="Button" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 482.0
+offset_top = 298.0
+offset_right = 527.0
+offset_bottom = 329.0
+text = "Next
+"

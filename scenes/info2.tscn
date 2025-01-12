@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://cxjna4314rpcm"]
+
+[ext_resource type="Texture2D" uid="uid://b07y87gc3sfxf" path="res://scenes/Screenshot 2025-01-12 034339.png" id="1_ytc6y"]
+[ext_resource type="Script" path="res://scenes/info2.gd" id="2_o1xj6"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Screenshot2025-01-12034339" type="Sprite2D" parent="."]
+position = Vector2(303.375, 191.063)
+scale = Vector2(0.373862, 0.430159)
+texture = ExtResource("1_ytc6y")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_o1xj6")
+
+[node name="Button" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 469.0
+offset_top = 291.0
+offset_right = 518.0
+offset_bottom = 322.0
+text = "Done"

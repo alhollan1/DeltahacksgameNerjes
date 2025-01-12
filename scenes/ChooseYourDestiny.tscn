@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://c15c5f1667giw"]
+
+[ext_resource type="Texture2D" uid="uid://rt17rt1g8fi2" path="res://scenes/DALL·E 2025-01-10 04.51.09 - A pixel art style image of a fantasy-themed portal selection screen with the phrase 'Choose Your Destiny' written in glowing, mystical letters at the .webp" id="1_1absf"]
+[ext_resource type="Script" path="res://scenes/choose_your_destiny.gd" id="1_3fi34"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchor_right = 0.009
+anchor_bottom = 0.013
+offset_right = 19.264
+offset_bottom = 23.152
+script = ExtResource("1_3fi34")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="Dall·e2025-01-1004_51_09-APixelArtStyleImageOfAFantasy-themedPortalSelectionScreenWithThePhrase\'chooseYourDestiny\'WrittenInGlowing,MysticalLettersAtThe" type="Sprite2D" parent="."]
+position = Vector2(270.25, 175.125)
+scale = Vector2(0.495605, 0.310303)
+texture = ExtResource("1_1absf")
+
+[node name="Button2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 44.0
+offset_top = 222.0
+offset_right = 121.0
+offset_bottom = 253.0
+text = "software
+"

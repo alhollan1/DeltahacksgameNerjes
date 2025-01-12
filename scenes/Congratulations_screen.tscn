@@ -1,0 +1,36 @@
+[gd_scene load_steps=4 format=3 uid="uid://cjnk1sn6vnc5m"]
+
+[ext_resource type="Texture2D" uid="uid://c2rcp2m67yhtx" path="res://scenes/DALL·E 2025-01-12 02.34.50 - A festive and colorful image featuring the text 'Congratulations! You have passed the basic first aid test' in bold and cheerful font. The background .webp" id="1_qjtit"]
+[ext_resource type="Texture2D" uid="uid://bbikoe7jinae" path="res://scenes/Screenshot 2025-01-12 024820.png" id="2_sowex"]
+[ext_resource type="Script" path="res://scenes/Congratulations_screen.gd" id="3_rlm8g"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Dall·e2025-01-1202_34_50-AFestiveAndColorfulImageFeaturingTheText\'congratulations!YouHavePassedTheBasicFirstAidTest\'InBoldAndCheerfulFont_TheBackground" type="Sprite2D" parent="."]
+position = Vector2(283, 162)
+scale = Vector2(0.32373, 0.334839)
+texture = ExtResource("1_qjtit")
+
+[node name="Screenshot2025-01-12024820" type="Sprite2D" parent="."]
+position = Vector2(507, 163)
+scale = Vector2(9.21429, 16.381)
+texture = ExtResource("2_sowex")
+
+[node name="Screenshot2025-01-12024821" type="Sprite2D" parent="."]
+position = Vector2(67, 162)
+scale = Vector2(9.21429, 16.381)
+texture = ExtResource("2_sowex")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("3_rlm8g")
+
+[node name="Button" type="Button" parent="Control"]
+offset_left = 20.0
+offset_top = 271.0
+offset_right = 218.0
+offset_bottom = 302.0
+text = "Go back to nurse's office"

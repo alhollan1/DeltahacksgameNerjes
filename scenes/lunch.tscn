@@ -1,0 +1,48 @@
+[gd_scene load_steps=4 format=3 uid="uid://bxysuewp0dxnt"]
+
+[ext_resource type="Script" path="res://scenes/lunch1.gd" id="3_enbtn"]
+[ext_resource type="Texture2D" uid="uid://bu0i4f34wlm53" path="res://scenes/DALL·E 2025-01-12 04.52.39 - A pixel art illustration showing a veggie sandwich and a slice of pizza on separate plates placed right next to each other. The veggie sandwich is on .webp" id="3_r60qa"]
+[ext_resource type="Texture2D" uid="uid://ccmr1govm8q7n" path="res://scenes/Screenshot 2025-01-11 230232.png" id="3_umgyp"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Screenshot2025-01-11230232" type="Sprite2D" parent="."]
+show_behind_parent = true
+position = Vector2(859, 219)
+scale = Vector2(14.52, 24.48)
+texture = ExtResource("3_umgyp")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("3_enbtn")
+
+[node name="Veggie" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 130.0
+offset_top = 250.0
+offset_right = 287.0
+offset_bottom = 309.0
+text = "Veggie Sandwhich"
+
+[node name="Pizza" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 337.0
+offset_top = 246.0
+offset_right = 480.0
+offset_bottom = 310.0
+text = "Pizza"
+
+[node name="Screenshot2025-01-11230233" type="Sprite2D" parent="."]
+show_behind_parent = true
+position = Vector2(-251, 220)
+scale = Vector2(14.52, 24.48)
+texture = ExtResource("3_umgyp")
+
+[node name="Dall·e2025-01-1204_52_39-APixelArtIllustrationShowingAVeggieSandwichAndASliceOfPizzaOnSeparatePlatesPlacedRightNextToEachOther_TheVeggieSandwichIsOn2" type="Sprite2D" parent="."]
+show_behind_parent = true
+position = Vector2(290, 168)
+scale = Vector2(0.426758, 0.350586)
+texture = ExtResource("3_r60qa")

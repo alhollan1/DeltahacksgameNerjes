@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=3 uid="uid://dwtwsye4svfhe"]
+
+[ext_resource type="Texture2D" uid="uid://deix0jslnbkjf" path="res://scenes/Screenshot 2025-01-12 063837.png" id="1_vghs5"]
+[ext_resource type="Script" path="res://scenes/BBgamemini.gd" id="2_eosfn"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Screenshot2025-01-12063837" type="Sprite2D" parent="."]
+position = Vector2(286, 208)
+scale = Vector2(0.447329, 0.41006)
+texture = ExtResource("1_vghs5")
+
+[node name="Screenshot2025-01-12063838" type="Sprite2D" parent="."]
+show_behind_parent = true
+position = Vector2(1083.72, -790.031)
+scale = Vector2(2.20629, 2.62828)
+texture = ExtResource("1_vghs5")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_eosfn")
+
+[node name="KB" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 103.0
+offset_top = 285.0
+offset_right = 506.0
+offset_bottom = 333.0
+text = "PRESS 20 TIMES QUICK WE HAVE TO BEAT THE KING"

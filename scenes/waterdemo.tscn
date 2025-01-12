@@ -1,0 +1,74 @@
+[gd_scene load_steps=4 format=3 uid="uid://bbuh8we0m41kr"]
+
+[ext_resource type="Texture2D" uid="uid://dpg5fhlsvpe6x" path="res://scenes/waterdemo.png" id="1_5vuym"]
+[ext_resource type="Script" path="res://scenes/waterdemo.gd" id="2_bjqqs"]
+[ext_resource type="Texture2D" uid="uid://ccmr1govm8q7n" path="res://scenes/Screenshot 2025-01-11 230232.png" id="3_7msah"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Waterdemo" type="Sprite2D" parent="."]
+position = Vector2(257, 134)
+scale = Vector2(0.195801, 0.17041)
+texture = ExtResource("1_5vuym")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_bjqqs")
+
+[node name="Button" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 265.0
+offset_right = 146.0
+offset_bottom = 285.0
+
+[node name="Button2" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 129.0
+offset_top = 289.0
+offset_right = 142.0
+offset_bottom = 301.0
+
+[node name="Label" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = 108.0
+offset_top = 19.0
+offset_right = 408.0
+offset_bottom = 42.0
+text = "It is always important to choose water!"
+
+[node name="Label2" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = 132.0
+offset_top = 227.0
+offset_right = 480.0
+offset_bottom = 354.0
+theme_override_font_sizes/font_size = 12
+text = "Why is it important to drink water every day?
+A. To stay hydrated and healthy.
+B. To make your hair grow faster.
+C. So you don't feel bored.
+D. To make your voice louder."
+
+[node name="Button4" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 129.0
+offset_top = 250.0
+offset_right = 142.0
+offset_bottom = 262.0
+
+[node name="Button5" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 126.0
+offset_top = 305.0
+offset_right = 144.0
+offset_bottom = 325.0
+
+[node name="Screenshot2025-01-11230232" type="Sprite2D" parent="."]
+show_behind_parent = true
+position = Vector2(265.5, 228.5)
+scale = Vector2(16.78, 25)
+texture = ExtResource("3_7msah")

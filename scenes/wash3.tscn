@@ -1,0 +1,37 @@
+[gd_scene load_steps=4 format=3 uid="uid://p15g42cdevvt"]
+
+[ext_resource type="Texture2D" uid="uid://drnkc7iu26ih2" path="res://scenes/wash4.png" id="1_2ec6q"]
+[ext_resource type="Texture2D" uid="uid://dylh0hbdj5wn7" path="res://scenes/Screenshot 2025-01-12 034059.png" id="2_on1mg"]
+[ext_resource type="Script" path="res://scenes/wash3.gd" id="3_rypul"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Wash4" type="Sprite2D" parent="."]
+position = Vector2(277, 164)
+scale = Vector2(0.379395, 0.327637)
+texture = ExtResource("1_2ec6q")
+
+[node name="Screenshot2025-01-12034059" type="Sprite2D" parent="."]
+position = Vector2(25.5, 162)
+scale = Vector2(9.30769, 16.4762)
+texture = ExtResource("2_on1mg")
+
+[node name="Screenshot2025-01-12034060" type="Sprite2D" parent="."]
+position = Vector2(530, 163)
+scale = Vector2(9.30769, 16.4762)
+texture = ExtResource("2_on1mg")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("3_rypul")
+
+[node name="Button" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 250.0
+offset_top = 224.0
+offset_right = 389.0
+offset_bottom = 286.0
+text = "Click on towel"

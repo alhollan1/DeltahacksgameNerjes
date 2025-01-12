@@ -1,0 +1,65 @@
+[gd_scene load_steps=4 format=3 uid="uid://cvsp2p0kv80m8"]
+
+[ext_resource type="Texture2D" uid="uid://bk3rqj1njock4" path="res://Screenshot 2025-01-12 023643.png" id="2_8j10e"]
+[ext_resource type="Script" path="res://scenes/options.gd" id="3_fpvxp"]
+[ext_resource type="Texture2D" uid="uid://bpqon26agmbcp" path="res://scenes/DALL·E 2025-01-11 22.37.04 - A pixel art image illustrating a first aid quiz question. The top of the image shows the question_ 'Which of these items should NOT be in a first aid .webp" id="3_xjud5"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Screenshot2025-01-12023643" type="Sprite2D" parent="."]
+position = Vector2(-0.999998, 160)
+scale = Vector2(3.5, 4.42105)
+texture = ExtResource("2_8j10e")
+
+[node name="Screenshot2025-01-12023644" type="Sprite2D" parent="."]
+position = Vector2(500, 160)
+scale = Vector2(3.5, 4.42105)
+texture = ExtResource("2_8j10e")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("3_fpvxp")
+
+[node name="Button" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 269.0
+offset_top = 164.0
+offset_right = 289.0
+offset_bottom = 188.0
+
+[node name="Button2" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 270.0
+offset_top = 105.0
+offset_right = 291.0
+offset_bottom = 123.0
+
+[node name="Button3" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 109.0
+offset_top = 314.0
+offset_right = 132.0
+offset_bottom = 335.0
+
+[node name="Button4" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 101.0
+offset_top = 183.0
+offset_right = 119.0
+offset_bottom = 205.0
+
+[node name="Button5" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 271.0
+offset_top = 314.0
+offset_right = 286.0
+offset_bottom = 330.0
+
+[node name="Dall·e2025-01-1122_37_04-APixelArtImageIllustratingAFirstAidQuizQuestion_TheTopOfTheImageShowsTheQuestion\'whichOfTheseItemsShouldNotBeInAFirstAid2" type="Sprite2D" parent="."]
+show_behind_parent = true
+position = Vector2(248.125, 163)
+scale = Vector2(0.359619, 0.322266)
+texture = ExtResource("3_xjud5")

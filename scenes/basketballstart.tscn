@@ -1,0 +1,39 @@
+[gd_scene load_steps=3 format=3 uid="uid://dhh6522u50v8o"]
+
+[ext_resource type="Texture2D" uid="uid://wne04h4b1oxn" path="res://scenes/Screenshot 2025-01-12 064109.png" id="1_2li33"]
+[ext_resource type="Script" path="res://scenes/basketballstart.gd" id="1_cyl5y"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_cyl5y")
+
+[node name="Label" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 5.0
+offset_right = 898.0
+offset_bottom = 80.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 9
+text = "QUICK! DRIBBLE THE BASKETBALL 20 TIMES TO BE LIKE OUR GLORIOUS KING! (We will basically be at the same level)"
+
+[node name="BS" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 465.0
+offset_top = 274.0
+offset_right = 575.0
+offset_bottom = 324.0
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+text = "START!!!!"
+
+[node name="Screenshot2025-01-12064110" type="Sprite2D" parent="."]
+show_behind_parent = true
+position = Vector2(288, 168)
+scale = Vector2(0.812236, 0.701646)
+texture = ExtResource("1_2li33")

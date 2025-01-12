@@ -1,0 +1,45 @@
+[gd_scene load_steps=4 format=3 uid="uid://cgnjama6vu1cf"]
+
+[ext_resource type="Texture2D" uid="uid://w1umxu76mp52" path="res://scenes/DALL·E 2025-01-12 04.12.17 - A pixel art illustration of a soda can and a water bottle placed next to each other. The soda can is red with a white stripe, designed in a retro pixe.webp" id="1_1kaq5"]
+[ext_resource type="Texture2D" uid="uid://ccmr1govm8q7n" path="res://scenes/Screenshot 2025-01-11 230232.png" id="2_t4g4x"]
+[ext_resource type="Script" path="res://scenes/drink.gd" id="3_16eyl"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Dall·e2025-01-1204_12_17-APixelArtIllustrationOfASodaCanAndAWaterBottlePlacedNextToEachOther_TheSodaCanIsRedWithAWhiteStripe,DesignedInARetroPixe" type="Sprite2D" parent="."]
+position = Vector2(256, 157)
+scale = Vector2(0.372559, 0.323242)
+texture = ExtResource("1_1kaq5")
+
+[node name="Screenshot2025-01-11230232" type="Sprite2D" parent="."]
+position = Vector2(-10, 151)
+scale = Vector2(3.12, 13.7)
+texture = ExtResource("2_t4g4x")
+
+[node name="Screenshot2025-01-11230233" type="Sprite2D" parent="."]
+position = Vector2(520, 152)
+scale = Vector2(3.12, 13.7)
+texture = ExtResource("2_t4g4x")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("3_16eyl")
+
+[node name="Button10" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 154.0
+offset_top = 265.0
+offset_right = 233.0
+offset_bottom = 297.0
+text = "Soda"
+
+[node name="Button11" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 288.0
+offset_top = 265.0
+offset_right = 367.0
+offset_bottom = 297.0
+text = "Water"

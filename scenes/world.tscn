@@ -1,0 +1,433 @@
+[gd_scene load_steps=46 format=3 uid="uid://cbx5sklbmou80"]
+
+[ext_resource type="Script" path="res://scripts/player.gd" id="1_vfqlg"]
+[ext_resource type="Texture2D" uid="uid://bw1noncrlqb3i" path="res://characters/characters/player.png" id="2_dh7nu"]
+[ext_resource type="Script" path="res://scenes/world_game_1.gd" id="4_2apqs"]
+[ext_resource type="Texture2D" uid="uid://ddqabf0ylhaje" path="res://scenes/DALL·E 2025-01-11 15.58.07 - A top-down 2D pixel art classroom styled like Stardew Valley, designed as a video game setting. The scene features wooden desks and chairs, bookshelve.webp" id="4_ay2tt"]
+[ext_resource type="Texture2D" uid="uid://bs6ujtje1sbaj" path="res://scenes/Screenshot 2025-01-10 021506.png" id="5_tatqm"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oat4v"]
+atlas = ExtResource("2_dh7nu")
+region = Rect2(0, 96, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xwdug"]
+atlas = ExtResource("2_dh7nu")
+region = Rect2(48, 96, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rtls2"]
+atlas = ExtResource("2_dh7nu")
+region = Rect2(96, 96, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8xypr"]
+atlas = ExtResource("2_dh7nu")
+region = Rect2(144, 96, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xb2af"]
+atlas = ExtResource("2_dh7nu")
+region = Rect2(192, 96, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mk6cs"]
+atlas = ExtResource("2_dh7nu")
+region = Rect2(240, 96, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ln411"]
+atlas = ExtResource("2_dh7nu")
+region = Rect2(0, 240, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xcplx"]
+atlas = ExtResource("2_dh7nu")
+region = Rect2(48, 240, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1m85g"]
+atlas = ExtResource("2_dh7nu")
+region = Rect2(96, 240, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_efy0q"]
+atlas = ExtResource("2_dh7nu")
+region = Rect2(144, 240, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5lge0"]
+atlas = ExtResource("2_dh7nu")
+region = Rect2(192, 240, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uk1gy"]
+atlas = ExtResource("2_dh7nu")
+region = Rect2(240, 240, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d2ipp"]
+atlas = ExtResource("2_dh7nu")
+region = Rect2(0, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pjyb2"]
+atlas = ExtResource("2_dh7nu")
+region = Rect2(48, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qhtvx"]
+atlas = ExtResource("2_dh7nu")
+region = Rect2(96, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k14wr"]
+atlas = ExtResource("2_dh7nu")
+region = Rect2(144, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ygf4c"]
+atlas = ExtResource("2_dh7nu")
+region = Rect2(192, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o7auk"]
+atlas = ExtResource("2_dh7nu")
+region = Rect2(240, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s6hm5"]
+atlas = ExtResource("2_dh7nu")
+region = Rect2(0, 144, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1v417"]
+atlas = ExtResource("2_dh7nu")
+region = Rect2(48, 144, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hamjp"]
+atlas = ExtResource("2_dh7nu")
+region = Rect2(96, 144, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jruv1"]
+atlas = ExtResource("2_dh7nu")
+region = Rect2(144, 144, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uemd8"]
+atlas = ExtResource("2_dh7nu")
+region = Rect2(192, 144, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d2884"]
+atlas = ExtResource("2_dh7nu")
+region = Rect2(240, 144, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yg8ie"]
+atlas = ExtResource("2_dh7nu")
+region = Rect2(0, 48, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ia05c"]
+atlas = ExtResource("2_dh7nu")
+region = Rect2(48, 48, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rmemh"]
+atlas = ExtResource("2_dh7nu")
+region = Rect2(96, 48, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yodg3"]
+atlas = ExtResource("2_dh7nu")
+region = Rect2(144, 48, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o7nyd"]
+atlas = ExtResource("2_dh7nu")
+region = Rect2(192, 48, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6xam6"]
+atlas = ExtResource("2_dh7nu")
+region = Rect2(240, 48, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hb1ut"]
+atlas = ExtResource("2_dh7nu")
+region = Rect2(0, 192, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s0emq"]
+atlas = ExtResource("2_dh7nu")
+region = Rect2(48, 192, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qec50"]
+atlas = ExtResource("2_dh7nu")
+region = Rect2(96, 192, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_njype"]
+atlas = ExtResource("2_dh7nu")
+region = Rect2(144, 192, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_15jnw"]
+atlas = ExtResource("2_dh7nu")
+region = Rect2(192, 192, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xdokv"]
+atlas = ExtResource("2_dh7nu")
+region = Rect2(240, 192, 48, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yqhdj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oat4v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xwdug")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rtls2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8xypr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xb2af")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mk6cs")
+}],
+"loop": true,
+"name": &"back_idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ln411")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xcplx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1m85g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_efy0q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5lge0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uk1gy")
+}],
+"loop": true,
+"name": &"back_walk",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d2ipp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pjyb2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qhtvx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k14wr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ygf4c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o7auk")
+}],
+"loop": true,
+"name": &"front_idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s6hm5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1v417")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hamjp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jruv1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uemd8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d2884")
+}],
+"loop": true,
+"name": &"front_walk",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yg8ie")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ia05c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rmemh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yodg3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o7nyd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6xam6")
+}],
+"loop": true,
+"name": &"side_idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hb1ut")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s0emq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qec50")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_njype")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_15jnw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xdokv")
+}],
+"loop": true,
+"name": &"side_walk",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sq2qn"]
+radius = 9.0
+height = 26.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d47r7"]
+size = Vector2(195.5, 71)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7fy5u"]
+size = Vector2(71, 20)
+
+[node name="world" type="Node2D"]
+
+[node name="Player" type="CharacterBody2D" parent="."]
+top_level = true
+position = Vector2(39, 9)
+script = ExtResource("1_vfqlg")
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+position = Vector2(148, 180)
+limit_left = -96
+limit_top = 0
+limit_right = 600
+limit_bottom = 400
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player"]
+position = Vector2(149, 164)
+scale = Vector2(1.68532, 1.48811)
+sprite_frames = SubResource("SpriteFrames_yqhdj")
+animation = &"back_idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+position = Vector2(150, 179)
+shape = SubResource("CapsuleShape2D_sq2qn")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+show_behind_parent = true
+position = Vector2(254, 201)
+scale = Vector2(0.493408, 0.393735)
+
+[node name="computer" type="Area2D" parent="." groups=["computer"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="computer"]
+position = Vector2(-449, 329)
+shape = SubResource("RectangleShape2D_d47r7")
+
+[node name="Sprite2D" type="Sprite2D" parent="computer"]
+top_level = true
+position = Vector2(-447, 330)
+scale = Vector2(0.214286, 0.292553)
+texture = ExtResource("5_tatqm")
+
+[node name="collisions" type="StaticBody2D" parent="."]
+top_level = true
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="collisions"]
+position = Vector2(-3, -5)
+polygon = PackedVector2Array(26, 126, 27, 131, 191, 129, 205, 129, 205, 142, 310, 143, 310, 121, 412, 121, 485, 121, 488, 178, 428, 179, 428, 194, 444.743, 194.284, 487, 195, 490, 323, 464, 322, 465, 393, 14, 393, 53, 393, 54, 314, 18, 316, 15, 149, 20, 148, -30, 122, -27, 413, 528, 411, 532, 18, 18, 26, 21, 147, 23, 147)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="collisions"]
+position = Vector2(188, 190)
+shape = SubResource("RectangleShape2D_7fy5u")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="collisions"]
+position = Vector2(318, 192)
+shape = SubResource("RectangleShape2D_7fy5u")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="collisions"]
+position = Vector2(193, 263)
+shape = SubResource("RectangleShape2D_7fy5u")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="collisions"]
+position = Vector2(317, 264)
+shape = SubResource("RectangleShape2D_7fy5u")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="collisions"]
+position = Vector2(193, 334)
+shape = SubResource("RectangleShape2D_7fy5u")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="collisions"]
+position = Vector2(317, 333)
+shape = SubResource("RectangleShape2D_7fy5u")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="collisions"]
+position = Vector2(81, 262)
+shape = SubResource("RectangleShape2D_7fy5u")
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="collisions"]
+position = Vector2(429, 263)
+shape = SubResource("RectangleShape2D_7fy5u")
+
+[node name="Dall·e2025-01-1115_58_07-ATop-down2dPixelArtClassroomStyledLikeStardewValley,DesignedAsAVideoGameSetting_TheSceneFeaturesWoodenDesksAndChairs,Bookshelve" type="Sprite2D" parent="."]
+position = Vector2(749, 202)
+scale = Vector2(0.476074, 0.395508)
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("4_2apqs")
+
+[node name="Glass" type="Button" parent="Control"]
+top_level = true
+layout_mode = 0
+offset_left = 86.0
+offset_top = 353.0
+offset_right = 134.0
+offset_bottom = 399.0
+
+[node name="S" type="Button" parent="Control"]
+top_level = true
+layout_mode = 0
+offset_left = 405.0
+offset_top = 316.0
+offset_right = 469.0
+offset_bottom = 368.0
+
+[node name="N" type="Button" parent="Control"]
+top_level = true
+layout_mode = 0
+offset_left = 451.0
+offset_top = 373.0
+offset_right = 496.0
+offset_bottom = 404.0
+text = "Next"
+
+[node name="Dall·e2025-01-1115_58_07-ATop-down2dPixelArtClassroomStyledLikeStardewValley,DesignedAsAVideoGameSetting_TheSceneFeaturesWoodenDesksAndChairs,Bookshelve2" type="Sprite2D" parent="."]
+position = Vector2(257, 210)
+scale = Vector2(0.503906, 0.412109)
+texture = ExtResource("4_ay2tt")
+
+[node name="Dall·e2025-01-1115_58_07-ATop-down2dPixelArtClassroomStyledLikeStardewValley,DesignedAsAVideoGameSetting_TheSceneFeaturesWoodenDesksAndChairs,Bookshelve3" type="Sprite2D" parent="."]
+position = Vector2(-257, 207)
+scale = Vector2(0.503906, 0.412109)
+texture = ExtResource("4_ay2tt")
+
+[node name="Dall·e2025-01-1115_58_07-ATop-down2dPixelArtClassroomStyledLikeStardewValley,DesignedAsAVideoGameSetting_TheSceneFeaturesWoodenDesksAndChairs,Bookshelve4" type="Sprite2D" parent="."]
+position = Vector2(771, 210)
+scale = Vector2(0.503906, 0.412109)
+texture = ExtResource("4_ay2tt")

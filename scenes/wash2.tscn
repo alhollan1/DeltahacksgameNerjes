@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://chlg1u64wsxf2"]
+
+[ext_resource type="Texture2D" uid="uid://xvojir2dg86c" path="res://scenes/wash3.png" id="1_ndn17"]
+[ext_resource type="Script" path="res://scenes/wash2.gd" id="2_uu74a"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Wash3" type="Sprite2D" parent="."]
+position = Vector2(310, 160)
+scale = Vector2(0.347412, 0.321533)
+texture = ExtResource("1_ndn17")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_uu74a")
+
+[node name="Button" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 162.0
+offset_top = 267.0
+offset_right = 476.0
+offset_bottom = 353.0
+text = "Continue washing hands for 20 seconds"

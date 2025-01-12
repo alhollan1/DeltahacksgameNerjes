@@ -1,0 +1,44 @@
+[gd_scene load_steps=4 format=3 uid="uid://ccx4evuqyql7k"]
+
+[ext_resource type="Texture2D" uid="uid://bepd04fqjvb5u" path="res://scenes/wash1.png" id="1_wqf3y"]
+[ext_resource type="Texture2D" uid="uid://qm6iclhxyd6c" path="res://scenes/Screenshot 2025-01-12 033244.png" id="2_piac1"]
+[ext_resource type="Script" path="res://scenes/wash1.gd" id="3_lvop0"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Wash1" type="Sprite2D" parent="."]
+position = Vector2(282, 172)
+scale = Vector2(0.400391, 0.335449)
+texture = ExtResource("1_wqf3y")
+
+[node name="Screenshot2025-01-12033244" type="Sprite2D" parent="."]
+position = Vector2(31.5, 168.5)
+scale = Vector2(3.72, 6.76471)
+texture = ExtResource("2_piac1")
+
+[node name="Screenshot2025-01-12033245" type="Sprite2D" parent="."]
+position = Vector2(524, 166)
+scale = Vector2(3.72, 6.76471)
+texture = ExtResource("2_piac1")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("3_lvop0")
+
+[node name="Label" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = 174.0
+offset_top = 10.0
+offset_right = 384.0
+offset_bottom = 33.0
+text = "Please click on the soap >.<"
+
+[node name="Button" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 181.0
+offset_top = 153.0
+offset_right = 214.0
+offset_bottom = 182.0

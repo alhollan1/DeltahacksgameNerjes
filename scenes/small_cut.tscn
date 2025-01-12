@@ -1,0 +1,73 @@
+[gd_scene load_steps=5 format=3 uid="uid://cnwtgkrypedey"]
+
+[ext_resource type="Script" path="res://scenes/smallcut.gd" id="2_lwiyk"]
+[ext_resource type="Texture2D" uid="uid://ccmr1govm8q7n" path="res://scenes/Screenshot 2025-01-11 230232.png" id="2_nmr0f"]
+[ext_resource type="Texture2D" uid="uid://b8klcad3vunk3" path="res://scenes/DALL·E 2025-01-11 22.34.18 - A pixel art illustration of a child with a small cut on their hand. The child should appear concerned but calm, standing against a simple background. .webp" id="2_vtfdg"]
+
+[sub_resource type="Theme" id="Theme_c8l5r"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Label" type="Label" parent="."]
+offset_left = 141.0
+offset_top = 225.0
+offset_right = 1039.0
+offset_bottom = 492.0
+theme = SubResource("Theme_c8l5r")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 10
+text = "What should you do if someone has a small cut on their hand?
+A. Cover it with a glove
+B. Wash it with soap and water, then apply a bandaid
+C. Wrap it tightly with tape
+D. Ignore it"
+
+[node name="Control" type="Control" parent="Label"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -141.0
+offset_top = -225.0
+offset_right = -101.0
+offset_bottom = -185.0
+script = ExtResource("2_lwiyk")
+
+[node name="Button2" type="Button" parent="Label/Control"]
+layout_mode = 0
+offset_left = 141.0
+offset_top = 278.0
+offset_right = 151.0
+offset_bottom = 289.0
+
+[node name="Button" type="Button" parent="Label/Control"]
+layout_mode = 0
+offset_left = 140.0
+offset_top = 260.0
+offset_right = 150.0
+offset_bottom = 274.0
+
+[node name="Button3" type="Button" parent="Label/Control"]
+layout_mode = 0
+offset_left = 141.0
+offset_top = 298.0
+offset_right = 149.0
+offset_bottom = 306.0
+
+[node name="Button4" type="Button" parent="Label/Control"]
+layout_mode = 0
+offset_left = 139.0
+offset_top = 243.0
+offset_right = 151.0
+offset_bottom = 256.0
+
+[node name="Screenshot2025-01-11230232" type="Sprite2D" parent="."]
+show_behind_parent = true
+position = Vector2(328, 221)
+scale = Vector2(14.76, 23.72)
+texture = ExtResource("2_nmr0f")
+
+[node name="Dall·e2025-01-1122_34_18-APixelArtIllustrationOfAChildWithASmallCutOnTheirHand_TheChildShouldAppearConcernedButCalm,StandingAgainstASimpleBackground_" type="Sprite2D" parent="."]
+position = Vector2(267, 105)
+scale = Vector2(0.244141, 0.229492)
+texture = ExtResource("2_vtfdg")

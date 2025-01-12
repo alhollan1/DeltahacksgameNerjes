@@ -1,0 +1,55 @@
+[gd_scene load_steps=3 format=3 uid="uid://ce0dofaigpwih"]
+
+[ext_resource type="Texture2D" uid="uid://qm6iclhxyd6c" path="res://scenes/Screenshot 2025-01-12 033244.png" id="1_jd8p1"]
+[ext_resource type="Script" path="res://scenes/lunchdemo2.gd" id="2_wcsx4"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Screenshot2025-01-12033244" type="Sprite2D" parent="."]
+position = Vector2(302, 218)
+scale = Vector2(27.02, 10.1275)
+texture = ExtResource("1_jd8p1")
+
+[node name="Control2" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_wcsx4")
+
+[node name="Label" type="Label" parent="Control2"]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 37.0
+offset_right = 399.0
+offset_bottom = 164.0
+text = "Why is eating fruits and vegetables good for you?
+A. They taste bad.
+B. They give you energy and keep you healthy.
+C. They are colorful.
+D. They are fun to squish."
+
+[node name="A" type="Button" parent="Control2"]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 141.0
+offset_right = 37.0
+offset_bottom = 165.0
+
+[node name="B" type="Button" parent="Control2"]
+offset_left = 14.0
+offset_top = 89.0
+offset_right = 37.0
+offset_bottom = 112.0
+
+[node name="C" type="Button" parent="Control2"]
+offset_left = 16.0
+offset_top = 65.0
+offset_right = 39.0
+offset_bottom = 86.0
+
+[node name="D" type="Button" parent="Control2"]
+offset_left = 18.0
+offset_top = 121.0
+offset_right = 34.0
+offset_bottom = 136.0
